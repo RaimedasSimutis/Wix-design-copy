@@ -1,0 +1,26 @@
+.nav-container {
+    border-bottom: 3px solid black;
+    background-color: $navbar-color;
+    height: 63px;
+    
+    
+}
+
+nav {
+    width: 980px;
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    .navbar-brand {
+        font-size: 24px;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 331px;
+        
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+
+}

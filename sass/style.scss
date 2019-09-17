@@ -1,30 +1,135 @@
-$primary-color: #E6E6E7;
+@import '_variables.scss';
+@import '_navbar.scss';
 
 
 
 body {
     background-color: $primary-color !important;
-}
-
-.nav-container {
-    border-bottom: 2px solid black;
-}
-
-nav {
-    .nav-brand {
-        font-size: 24px;
-    }
-
-    .nav-item {
-        font-size: 12px;
-    }
+    margin: 0;
+    padding: 0;
 
 }
 
-.first-banner {
-    background-image: url(https://images.unsplash.com/photo-1556665490-57c34faa34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+.main-image-container {
+    background-image: url(http://kayatasinsaat.com/wp-content/uploads/2017/07/cvr-1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    height: 992px;
+}
+
+.content-container {
+    // height: 2992px;
+    width: 100%;
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: $content-width;
+        //background: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__header {
+            display: inline-block;
+            
+
+                h2 {
+                    margin: 50px 0;
+                }
+        }
+
+        &__section1 {
+            width: 100%;
+            height: 710px;
+            //background-color: pink;
+            position: relative;
+            
+
+            &__card {
+                width: $info-card-width;
+                background-color: white;
+                padding: 35px 70px 35px 60px;
+                font-size: 14px;
+
+                h6 {
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+                div {
+                    border-top: 1px solid black;
+                    width: 60px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                }
+
+                img {
+                    width: 66px;
+                }
+            }
+
+            &__card-left {
+                position: absolute;
+                top: 0px;
+                left: 65px;
+                z-index: 1015;
+            }
+
+            &__card-right {
+                position: absolute;
+                bottom: 0px;
+                right: 65px;
+                z-index: 1015;
+            }
+
+            &__img-left {
+                width: 486px;
+                height: 580px;
+                background-color: black;
+                background-image: url(https://static.wixstatic.com/media/2e2a49_ac34217db6554d01adc9fce1f4ce399c~mv2_d_5262_3509_s_4_2.jpg/v1/crop/x_2323,y_0,w_2939,h_3509/fill/w_729,h_870,al_c,q_85,usm_0.66_1.00_0.01/2e2a49_ac34217db6554d01adc9fce1f4ce399c~mv2_d_5262_3509_s_4_2.webp);
+                
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                z-index: 1010;
+            }
+
+            &__img-right {
+                width: 478px;
+                height: 580px;
+                background-color: black;
+                background-image: url(https://static.wixstatic.com/media/2e2a49_a6d7a17ed5f54456a50ab37bc6cf888e~mv2_d_5151_3432_s_4_2.jpg/v1/crop/x_2324,y_0,w_2827,h_3432/fill/w_717,h_870,al_c,q_85,usm_0.66_1.00_0.01/2e2a49_a6d7a17ed5f54456a50ab37bc6cf888e~mv2_d_5151_3432_s_4_2.webp);
+                
+                background-size: cover;
+                background-position: center;
+
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: 1010;
+            }
+
+
+        }
+
+    }
+    
+}
+
+.contacts-container {
     height: 900px;
+    background-color: white;
+
+}
+
+.footer-container {
+    height: 48px;
+    background-color: black;
 }

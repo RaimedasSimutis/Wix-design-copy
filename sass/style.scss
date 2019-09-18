@@ -1,5 +1,7 @@
 @import '_variables.scss';
+@import '_fonts.scss';
 @import '_navbar.scss';
+
 
 
 
@@ -7,15 +9,43 @@ body {
     background-color: $primary-color !important;
     margin: 0;
     padding: 0;
+    font-family: 'Helvetica', sans-serif !important;
 
 }
 
 .main-image-container {
-    background-image: url(http://kayatasinsaat.com/wp-content/uploads/2017/07/cvr-1.jpg);
-    background-attachment: fixed;
+    background-image: url(https://freight.cargo.site/t/original/i/a2a803d1ab5cf04079c07f1b3be052e161f3e5c93c1847af7bd496adcaa3ce03/lz2lb1s_z7s-daniel-lozano-valdes.jpg);
+    background-repeat: no-repeat;
+    //background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    //background-position: center;
     height: 992px;
+    width: 100%;
+    position: relative;
+
+    &__content {
+        position: absolute;
+        //background-color: red;
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .box-above-a{
+            width: 96px;
+            height: 37px;
+            background-color: #ffff;
+        }
+
+        p {
+            font-size: 325px;
+            font-weight: 700;
+            color: #ffff;
+        }
+    }
 }
 
 .content-container {
@@ -38,6 +68,8 @@ body {
 
                 h2 {
                     margin: 50px 0;
+                    font-size: 24px;
+                    font-weight: 700;
                 }
         }
 
@@ -116,6 +148,120 @@ body {
                 z-index: 1010;
             }
 
+
+        }
+
+        &__section2 {
+            width: 100%;
+            height: 530px;
+            //background-color: pink;
+            position: relative;
+            margin-top: 25px;
+
+            &__card {
+                width: 679px;
+                background-color: transparent;
+                border: 3px solid black;
+                padding: 35px 35px 45px 110px;
+                font-size: 14px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1010;
+
+                h6 {
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                }
+                div {
+                    border-top: 1px solid black;
+                    width: 60px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 45px;
+                    
+                }
+
+                img {
+                    width: 66px;
+                }
+            }
+
+            &__img {
+                width: 361px;
+                height: 425px;
+                background-color: black;
+                background-image: url(https://static.wixstatic.com/media/2e2a49_86c543da4e884abfaf0f0fe0f4533adc~mv2_d_5120_3413_s_4_2.jpg/v1/crop/x_1477,y_0,w_2897,h_3413/fill/w_361,h_425,al_c,q_80,usm_0.66_1.00_0.01/2e2a49_86c543da4e884abfaf0f0fe0f4533adc~mv2_d_5120_3413_s_4_2.webp);
+                
+                background-size: cover;
+                background-position: center;
+
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                z-index: 1015;
+            }
+            
+        }
+
+        &__section3 {
+            width: 100%;
+            height: 800px;
+            //background-color: pink;
+            position: relative;
+            margin-top: 65px;
+
+            
+            &__card {
+                width: 750px;
+                background-color: #ffff;
+                
+                padding: 40px 125px 50px 75px;
+                font-size: 14px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 1015;
+
+                h6 {
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                }
+                div {
+                    border-top: 1px solid black;
+                    width: 60px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 45px;
+                    
+                }
+
+                img {
+                    width: 66px;
+                }
+            }
+
+            &__img {
+                width: 521px;
+                height: 634px;
+                background-color: black;
+                background-image: url(https://static.wixstatic.com/media/2e2a49_6f1471a41d814ff7a5ae1a665514c7fc~mv2_d_5121_3414_s_4_2.jpg/v1/crop/x_1556,y_104,w_2720,h_3310/fill/w_521,h_634,al_c,q_80,usm_0.66_1.00_0.01/2e2a49_6f1471a41d814ff7a5ae1a665514c7fc~mv2_d_5121_3414_s_4_2.webp);
+                
+                background-size: cover;
+                background-position: center;
+
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: 1010;
+            }
+            
 
         }
 

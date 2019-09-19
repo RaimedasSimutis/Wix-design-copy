@@ -13,14 +13,29 @@ nav {
     
     .navbar-brand {
         font-size: 24px;
-        margin: 0 !important;
+        margin: 10px 0 0 0 !important;
         padding: 0 !important;
         width: 331px;
         
     }
 
     .nav-item {
-        font-size: 12px;
+        
+        
+
+        .nav-link {
+            padding: 16px 40px !important;
+            margin: 8px 6px 0px 6px;
+            font-size: 12px;
+            border-top: 4px solid transparent;
+            color: #060E25 !important;
+
+            &:hover {
+                border-top-color: black;
+            }
+        }
+
+        
     }
 
 }

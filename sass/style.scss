@@ -265,17 +265,113 @@ body {
 
         }
 
+        &__section4 {
+            width: 100%;
+            height: 800px;
+            //background-color: pink;
+            position: relative;
+            margin-top: 65px;
+
+            
+            &__card {
+                width: 750px;
+                background-color: #ffff;
+                
+                padding: 40px 125px 50px 75px;
+                font-size: 14px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 1015;
+
+                h6 {
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                }
+                div {
+                    border-top: 1px solid black;
+                    width: 60px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 45px;
+                    
+                }
+
+                img {
+                    width: 66px;
+                }
+            }
+
+            &__img {
+                width: 980px;
+                height: 650px;
+                background-color: black;
+                background-image: url(https://static.wixstatic.com/media/2e2a49_0cccdf68948f4f1fa214b776d9b575c7~mv2_d_5120_3413_s_4_2.jpg/v1/fill/w_1470,h_975,al_c,q_85,usm_0.66_1.00_0.01/2e2a49_0cccdf68948f4f1fa214b776d9b575c7~mv2_d_5120_3413_s_4_2.webp);
+                
+                background-size: cover;
+                background-position: center;
+
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: 1010;
+            }
+            
+
+        }
+
     }
-    
+     
 }
 
 .contacts-container {
     height: 900px;
     background-color: white;
 
+    .back-to-top-button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .back-to-top-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+ 
+            img, p {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            img {
+                width: 30px;
+                height: auto;
+                
+                
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+
+        
+    
+    }
+
 }
 
 .footer-container {
-    height: 48px;
+    height: 100px;
     background-color: black;
+
+    
 }
+
+

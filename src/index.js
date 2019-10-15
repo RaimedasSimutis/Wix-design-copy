@@ -35,6 +35,7 @@ function parallax() {
     if (screen.width >= 1200) {
         let slider = document.getElementById("slider");
         let yPos = window.pageYOffset / slider.dataset.speed;
+        
         //yPos = -yPos;
         let coords = '0%' + yPos + 'px';
         slider.style.backgroundPosition = coords;
@@ -155,6 +156,7 @@ $('[data-nav-btn]').on("click", function (e) {
 //show letter animations on page load
   $( window ).on( "load", function() {
     posIdentificationOnNavbar();
+    parallax();
     $('.main-image-container__box-above-A').addClass('main-image-container__box-above-A--loaded');  
     $('.main-image-container__letter-S').addClass('main-image-container__letter-S--loaded');
     $('.main-image-container__letter-A').addClass('main-image-container__letter-A--loaded');

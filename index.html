@@ -5,48 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>ShureArchitects</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid nav-container sticky-top d-flex justify-content-center">
-        <nav class="navbar  navbar-expand-lg navbar-light d-flex justify-content-between">
-            <a class="navbar-brand font-weight-bold" href="#">ShureArchitects.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ml-auto d-flex justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">HOME<span class="sr-only">(current)</span></a>
+    <div class="nav-container">
+        <div class="nav-container__full-nav">
+            <div class="nav-container__nav-content">
+                <a class="nav-container__logo" href="#">ShureArchitects.</a>
+                <ul class="nav-container__nav-list">
+                    <li class="nav-container__nav-item" id="Home-btn">
+                        <a class="nav-container__nav-link" href="#">HOME</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">OUR STORY</a>
+                    <li class="nav-container__nav-item" id="Story-btn">
+                        <a class="nav-container__nav-link" href="">OUR STORY</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PROJECTS</a>
+                    <li class="nav-container__nav-item" id="Projects-btn">
+                        <a class="nav-container__nav-link" href="#">PROJECTS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                    <li class="nav-container__nav-item" id="Contacts-btn">
+                        <a class="nav-container__nav-link" href="#">CONTACT</a>
                     </li>
                 </ul>
             </div>
-
-        </nav>
-
+        </div>
     </div>
 
+    <div class="menu-bars">
+        <div class="menu-bars__container">
+            <a class="menu-bars__content" id="menu-bars" data-toggle="popup-nav" href="#">
+                <div class="menu-bars__menu-bar menu-bars__menu-bar--upper" id="upper-menu-bar"></div>
+                <div class="menu-bars__menu-bar menu-bars__menu-bar--middle" id="middle-menu-bar"></div>
+                <div class="menu-bars__menu-bar menu-bars__menu-bar--lower" id="lower-menu-bar"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="popup-nav" data-popup-nav="">
+        <div class="popup-nav__container">
+            <ul class="popup-nav__nav-list">
+                <li class="popup-nav__nav-item" id="Popup-home-btn">
+                    <a class="popup-nav__nav-link" href="#">HOME</a>
+
+                </li>
+                <li class="popup-nav__nav-item popup-nav__nav-item--line-break">
+
+                </li>
+                <li class="popup-nav__nav-item" id="Popup-story-btn">
+                    <a class="popup-nav__nav-link" href="">OUR STORY</a>
+                </li>
+                <li class="popup-nav__nav-item popup-nav__nav-item--line-break">
+
+                </li>
+                <li class="popup-nav__nav-item" id="Popup-projects-btn" data-nav-btn="content-container">
+                    <a class="popup-nav__nav-link" href="#">PROJECTS</a>
+                </li>
+                <li class="popup-nav__nav-item popup-nav__nav-item--line-break">
+
+                </li>
+                <li class="popup-nav__nav-item" id="Popup-contacts-btn" data-nav-btn="contacts-container">
+                    <a class="popup-nav__nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <section class="main-image-container" id="slider" data-type="background" data-speed="1.5">
         <div class="main-image-container__content">
-            <p>SĀ</p>
-        </div>
 
+            <div class="main-image-container__box-above-A ">
+
+            </div>
+            <div class="main-image-container__letters-container">
+                <div class="main-image-container__paragraph">
+                    <p class="main-image-container__letter-S">S</p>
+                </div>
+
+                <div class="main-image-container__paragraph">
+                    <p class="main-image-container__letter-A">A</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section class="content-container">
@@ -55,150 +100,176 @@
                 <h2>Our Featured Projects.</h2>
             </div>
 
-            <div class="content__section1">
-                <div class="content__section1__card content__section1__card-left">
-                    <h6>Project no.1</h6>
-                    
-                    <div></div>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
-                    <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
+            <div class="content__section">
+
+                <div class="content__img content__img--project-1">
+                    <img src="https://static.wixstatic.com/media/2e2a49_ac34217db6554d01adc9fce1f4ce399c~mv2_d_5262_3509_s_4_2.jpg/v1/crop/x_2323,y_0,w_2939,h_3509/fill/w_729,h_870,al_c,q_85,usm_0.66_1.00_0.01/2e2a49_ac34217db6554d01adc9fce1f4ce399c~mv2_d_5262_3509_s_4_2.webp"
+                        alt="">
+                    <div class="content__card content__card--project-1">
+                        <h6>Project no.1</h6>
+                        <div></div>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
+                        </p>
+                        <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
+                    </div>
                 </div>
 
-                <div class="content__section1__card content__section1__card-right">
-                    <h6>Project no.1</h6>
-                    
-                    <div></div>
-                    <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
-                    <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
-                </div>
+                <div class="content__img content__img--project-2">
+                    <img src="https://static.wixstatic.com/media/2e2a49_a6d7a17ed5f54456a50ab37bc6cf888e~mv2_d_5151_3432_s_4_2.jpg/v1/crop/x_2324,y_0,w_2827,h_3432/fill/w_717,h_870,al_c,q_85,usm_0.66_1.00_0.01/2e2a49_a6d7a17ed5f54456a50ab37bc6cf888e~mv2_d_5151_3432_s_4_2.webp"
+                        alt="">
+                    <div class="content__card content__card--project-2">
+                        <h6>Project no.2</h6>
 
-                <div class="content__section1__img-left">
-
-                </div>
-
-                <div class="content__section1__img-right">
-
-                </div>
-
-                
-
-
-
-                
-            </div>
-            <div class="content__section2">
-                <div class="content__section2__card">
-                    <h6>Project no.3</h6>
-                    
-                    <div></div>
-                    <p>
-                        I'm a paragraph. Click here to add your own text and edit me. 
-                        It’s easy. Just click “Edit Text” or double click me to add 
-                        your own content and make changes to the font. Feel free to 
-                        drag and drop me anywhere you like on your page. I’m a great 
-                        place for you to tell a story and let your users know a little 
-                        more about you.
-                        <br>
-                        <br>
-                        This is a great space to write long text about your company and 
-                        your services. You can use this space to go into a little more 
-                        detail about your company. Talk about your team and what services 
-                        you provide. Tell your visitors the story of how you came up with 
-                        the idea for your business and what makes you different from your 
-                        competitors. Make your company stand out and show your visitors 
-                        who you are.
-                    </p>
-                    <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
-                </div>
-
-                <div class="content__section2__img">
-
-                </div>
-
-
-
-
-
-            </div>
-            <div class="content__section3">
-                <div class="content__section3__card">
-                    <h6>Project no.4</h6>
-                    
-                    <div></div>
-                    <p>
-                        I'm a paragraph. Click here to add your own text and edit me. 
-                        It’s easy. Just click “Edit Text” or double click me to add 
-                        your own content and make changes to the font. Feel free to 
-                        drag and drop me anywhere you like on your page. I’m a great 
-                        place for you to tell a story and let your users know a little 
-                        more about you.
-                        <br>
-                        <br>
-                        This is a great space to write long text about your company and 
-                        your services. You can use this space to go into a little more 
-                        detail about your company. Talk about your team and what services 
-                        you provide. Tell your visitors the story of how you came up with 
-                        the idea for your business and what makes you different from your 
-                        competitors. Make your company stand out and show your visitors 
-                        who you are.
-                    </p>
-                    <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
-                </div>
-
-                <div class="content__section3__img">
-
+                        <div></div>
+                        <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.
+                        </p>
+                        <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="content__section4">
-                <div class="content__section4__card">
-                    <h6>Project no.5</h6>
-                    
-                    <div></div>
-                    <p>
-                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
-                        Just click “Edit Text” or double click me to add your own content and 
-                        make changes to the font.
-                    </p>
-                    <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
-                </div>
-
-                <div class="content__section4__img">
-
+            <div class="content__section">
+                <div class="content__img content__img--project-3">
+                    <img id="img-project3"
+                        src="https://static.wixstatic.com/media/2e2a49_86c543da4e884abfaf0f0fe0f4533adc~mv2_d_5120_3413_s_4_2.jpg/v1/crop/x_1477,y_0,w_2897,h_3413/fill/w_361,h_425,al_c,q_80,usm_0.66_1.00_0.01/2e2a49_86c543da4e884abfaf0f0fe0f4533adc~mv2_d_5120_3413_s_4_2.webp"
+                        alt="">
+                    <div class="content__card content__card--project-3">
+                        <h6>Project no.3</h6>
+                        <div></div>
+                        <p>
+                            I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add
+                            your own content and make changes to the font. Feel free to
+                            drag and drop me anywhere you like on your page. I’m a great
+                            place for you to tell a story and let your users know a little
+                            more about you.
+                            <br>
+                            <br>
+                            This is a great space to write long text about your company and
+                            your services. You can use this space to go into a little more
+                            detail about your company. Talk about your team and what services
+                            you provide. Tell your visitors the story of how you came up with
+                            the idea for your business and what makes you different from your
+                            competitors. Make your company stand out and show your visitors
+                            who you are.
+                        </p>
+                        <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
 
+            <div class="content__section">
+                <div class="content__img content__img--project-4">
+                    <img id="img-project4"
+                        src="https://static.wixstatic.com/media/2e2a49_6f1471a41d814ff7a5ae1a665514c7fc~mv2_d_5121_3414_s_4_2.jpg/v1/crop/x_1556,y_104,w_2720,h_3310/fill/w_521,h_634,al_c,q_80,usm_0.66_1.00_0.01/2e2a49_6f1471a41d814ff7a5ae1a665514c7fc~mv2_d_5121_3414_s_4_2.webp"
+                        alt="">
+                    <div class="content__card content__card--project-4">
+                        <h6>Project no.4</h6>
+
+                        <div></div>
+                        <p>
+                            I'm a paragraph. Click here to add your own text and edit me.
+                            It’s easy. Just click “Edit Text” or double click me to add
+                            your own content and make changes to the font. Feel free to
+                            drag and drop me anywhere you like on your page. I’m a great
+                            place for you to tell a story and let your users know a little
+                            more about you.
+                            <br>
+                            <br>
+                            This is a great space to write long text about your company and
+                            your services. You can use this space to go into a little more
+                            detail about your company. Talk about your team and what services
+                            you provide. Tell your visitors the story of how you came up with
+                            the idea for your business and what makes you different from your
+                            competitors. Make your company stand out and show your visitors
+                            who you are.
+                        </p>
+                        <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__section">
+                <div class="content__img content__img--project-5">
+                    <img id="img-project-5"
+                        src="https://static.wixstatic.com/media/2e2a49_0cccdf68948f4f1fa214b776d9b575c7~mv2_d_5120_3413_s_4_2.jpg/v1/fill/w_1470,h_975,al_c,q_85,usm_0.66_1.00_0.01/2e2a49_0cccdf68948f4f1fa214b776d9b575c7~mv2_d_5120_3413_s_4_2.webp"
+                        alt="">
+                    <div class="content__card content__card--project-5">
+                        <h6>Project no.5</h6>
+
+                        <div></div>
+                        <p>
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                            Just click “Edit Text” or double click me to add your own content and
+                            make changes to the font.
+                        </p>
+                        <a href=""><img src="./public/assets/img/arrow_right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
+
 
     <section class="contacts-container">
+        <div class="contacts-content">
+            <div class="contacts-content__header">
+                <h4>Stay In Touch.</h4>
+            </div>
+            <div class="contacts-content__img">
+                <img id="img-contacts"
+                    src="https://static.wixstatic.com/media/078d305c1ad24c51a5cb407913265dcf.jpg/v1/crop/x_207,y_0,w_5476,h_3840/fill/w_1470,h_1031,al_c,q_85,usm_0.66_1.00_0.01/078d305c1ad24c51a5cb407913265dcf.webp"
+                    alt="">
+                <div class="contacts-content__card">
+                    <h4>ShureArchitects.</h4>
+                    <div class="contacts-content__break-line"></div>
+                    <p>
+                        500 Terry Francois Street<br>
+                        San Francisco, CA 94158<br>
+                        <br>
+                        info@mysite.com<br>
+                        <br>
+                        Tel: 123-456-7890<br>
+                        Fax: 123-456-7890<br>
+                    </p>
+                    <div class="contacts-content__social-media-container">
+                        <a href="https://twitter.com/"><img src="./public/assets/img/iconfinder_twitter.svg" alt=""></a>
+                        <a href="https://www.instagram.com/"><img src="./public/assets/img/iconfinder_instagram.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="back-to-top-button-container">
-            <div class="back-to-top-button">
-                <img src="./public/assets/img/arrow_up.svg" alt="">
-                <p>Back to top</p>
+            <div class="contacts-content__button-container">
+                <div class="contacts-content__button">
+                    <img src="./public/assets/img/arrow_up.svg" alt="">
+                    <p>Back to top</p>
+                </div>
             </div>
         </div>
-            
     </section>
 
+
+
+
     <footer class="footer-container">
-            
-            
+        <p class="footer-container__text">© 2023 by ShureArchitects. Proudly created NOT with Wix.com</p>
+        <!-- <p class="footer-container__text">Proudly created NOT with Wix.com</p> -->
+
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="./index.js"></script>
+    <script src="./src/index.js"></script>
 </body>
 
 </html>

@@ -2,13 +2,35 @@
 $primary-color: #E6E6E7;
 
 //navigation bar
+$navbar-height: 63px;
+$navbar-height-desktop-L: 63px;
+$navbar-height-desktop-S: 63px;
+$navbar-height-tablet-L: 76px;
+$navbar-height-tablet-P: 86px;
+$navbar-height-mobile: 96px;
 $navbar-color: #E6E6E7;
 
 //contents
-$content-width: 980px;
+$content-width-desktop-L: 53%;
+$content-width-desktop-S: 75%;
+$content-width-tablet-L: 80%;
+$content-width-tablet-P: 89%;
+$content-width-mobile: 95%;
 
 //projects info cards
-$info-card-width: 400px;
+$card-width: 79%;
+$card-width-mobile: 90%;
 
 //projects images
 $img-card-width: 221px;
+
+//media breakpoints
+$breakpoint-desktop-S: 1800px;
+$breakpoint-tablet-L: 1200px;
+$breakpoint-tablet-P: 735px;
+$breakpoint-smartphones: 480px;
+
+//fonts sizes 
+$main-img-font-size-desktop: 325px;
+$main-img-font-size-tablet: 290px;
+$main-img-font-size-smartphone: 230px;

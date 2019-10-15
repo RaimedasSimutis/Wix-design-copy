@@ -18,13 +18,21 @@ module.exports = function(grunt) {
           tasks: ['compass'],
         },
       },
+      uglify: {
+        my_target: {
+          files: {
+            'public/output.js': ['src/functions.js', 'src/index.js']
+          }
+        }
+      },
     });
     //grunt.loadNpmTasks('grunt-contrib-compass');
     //grunt.loadNpmTasks('grunt-contrib-watch');
 
     [
       'grunt-contrib-compass',
-      'grunt-contrib-watch'
+      'grunt-contrib-watch',
+      'grunt-contrib-uglify'
     ].forEach(grunt.loadNpmTasks);
 
     grunt.registerTask('default', ['compass']);

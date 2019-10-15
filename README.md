@@ -11,3 +11,4 @@ It looks simple, clean and aesthetically nice to my eyes.
 
 
 P. S. this project is still in progress...
+P. S. S. mobile responsive action incoming!

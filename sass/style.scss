@@ -4,25 +4,63 @@
 @import '_fonts.scss';
 @import '_navbar.scss';
 
-
-
 body {
-    background-color: $primary-color !important;
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', sans-serif !important;
     min-width: 320px;
     box-sizing: border-box;
+
+}
+
+.body {
+    &--white {
+        background-color: white;
+    }
+
+    &--gray {
+        background-color: $primary-color;
+    }
+}
+
+.back-to-top-mobile {
+    position: fixed;
+    top: 100px;
+    right: -10px;
+    //background-color: pink;
+    width: 44px;
+    height: 44px;
+    z-index: 1050;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.432);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        color: white;
+        width: 40px;
+    }
 }
 
 .main-image-container {
-    background-image: url(https://freight.cargo.site/t/original/i/a2a803d1ab5cf04079c07f1b3be052e161f3e5c93c1847af7bd496adcaa3ce03/lz2lb1s_z7s-daniel-lozano-valdes.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 992px;
     width: 100%;
     position: relative;
+
+    &--home-img {
+        background-image: url(https://freight.cargo.site/t/original/i/a2a803d1ab5cf04079c07f1b3be052e161f3e5c93c1847af7bd496adcaa3ce03/lz2lb1s_z7s-daniel-lozano-valdes.jpg);
+
+    }
+
+    &--our-story-img {
+        background-image: url(../public/assets/img/main-img-our-story.jpg);
+    }
 
     &__content {
         position: absolute;
@@ -40,7 +78,7 @@ body {
         margin-left: 181px;
         background-color: white;
         transform: rotateY(90deg);
-        
+
         &--loaded {
             animation: anim-box-above-A 500ms linear 2.5s forwards;
         }
@@ -60,11 +98,11 @@ body {
         transition: all 1.2s;
         overflow: hidden;
     }
-        
+
     &__letter-S {
         width: 200px;
         transform: rotateY(-90deg);
-        transform-origin: 0% 50% 0 ;
+        transform-origin: 0% 50% 0;
 
         &--loaded {
             animation: anim-letters 500ms linear 1s forwards;
@@ -74,11 +112,11 @@ body {
     &__letter-A {
         width: 240px;
         transform: translateX(-300px);
-        
+
         &--loaded {
             animation: anim-letter-A 500ms linear 1.5s forwards;
         }
-    } 
+    }
 }
 
 .content-container {
@@ -92,6 +130,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding-bottom: 140px;
+        position: relative;
 
         &__header {
             text-align: center;
@@ -366,18 +405,22 @@ body {
 
 //For desktops (small)
 @media (max-width: $breakpoint-desktop-S) {
-    
+
     .content-container {
+
         //background-color: red;
         .content {
             width: $content-width-desktop-S;
+
             &__card {
                 h6 {
                     margin-bottom: 15px;
                 }
+
                 div {
                     margin-bottom: 15px;
                 }
+
                 p {
                     margin-bottom: 20px;
                 }
@@ -397,6 +440,7 @@ body {
 @media (max-width: $breakpoint-tablet-L) {
     .main-image-container {
         height: 680px;
+
         &__paragraph {
             font-size: $main-img-font-size-tablet;
         }
@@ -405,7 +449,7 @@ body {
             width: 90px;
             height: 33px;
             transform: none;
-            
+
             &--loaded {
                 animation: none;
             }
@@ -414,7 +458,7 @@ body {
         &__letter-S {
             width: 181px;
             transform: none;
-        
+
             &--loaded {
                 animation: none;
             }
@@ -423,7 +467,7 @@ body {
         &__letter-A {
             width: 210px;
             transform: none;
-            
+
             &--loaded {
                 animation: none;
             }
@@ -622,6 +666,7 @@ body {
         .content {
             width: $content-width-mobile;
             padding-bottom: 40px;
+
             &__header {
                 h2 {
                     margin: 15px 0 30px 0;
@@ -630,15 +675,15 @@ body {
 
             &__img {
                 &--project-3 {
-                    margin-top: 0px;   
+                    margin-top: 0px;
                 }
 
                 &--project-4 {
-                    margin-top: 0px; 
+                    margin-top: 0px;
                 }
 
                 &--project-5 {
-                    margin-top: 0px; 
+                    margin-top: 0px;
                 }
             }
 
